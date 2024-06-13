@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    .filtrage{
+        display: flex;
+        gap: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .filtrage .filtrer{
+        width: 80px;
+        text-align: center;
+        color: #fff;
+        border: none;
+        gap: 5px;
+        height: 35px;
+        font-size: 15px;
+        cursor: pointer;
+        background:	#1e1e1e;
+        transition: all .5s ease-in-out;
+    }
+    .filtrage .filtrer:hover{
+        color: #f35525;
+    }
+    .filtrage .filtrer.active{
+        background: #fff;
+    }
+</style>
+<body>
+    
+    <div class="filtrage">
+        <button class="filtrer" onclick="All('Tous')">Tous</button>
+        <button class="filtrer" onclick="filtrer('Roman')">Roman</button>
+        <button class="filtrer" onclick="filtrer('Science')">Science</button>
+        <button class="filtrer" onclick="filtrer('Policier')">Policier</button>
+        <button class="filtrer" onclick="filtrer('Histoire')">Histoire</button>
+        <button class="filtrer" onclick="filtrer('SF')">SF</button>
+    </div>
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+    <script>
+        function filtrer(input) {
+            console.log(input);    
+        }
+    </script>
+</html>

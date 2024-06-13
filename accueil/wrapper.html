@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    .containe{
+        position: relative;
+        padding: 10px;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: #000;
+        z-index: 1;
+    }
+    .containe .image{
+        position: relative;
+        padding: 15px;
+        text-align: center;
+    }
+    .containe .image img{
+        transition: all .3s ease-in-out;
+        width: 95%;
+        height: 75%;
+        z-index: 2;
+        border-radius: 5px;
+    }
+    .containe .image h3{
+        margin-top: 10px;
+        transition: all .3s ease-in-out;
+    }
+    .ali{
+        display: flex;
+        flex-direction: column;
+    }
+    span{
+        position: absolute;
+        top:47%;
+        align-self: center;
+        transform: translateY(-40%);
+        border-radius: 5px;
+        height: 90%;
+        width: 90%;
+        z-index: -1;
+        background: hsl(0, 0%, 85%);
+    }
+    .containe .image img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+   
+</style>
+<body>
+    <div class="containe">
+        <div class="image col-lg-2 col-md-6">
+            <a href="index.html">
+            <img src="../php/small-L97828940652801.jpg" alt=""></a>
+            <h3>La ville céleste</h3>
+            <div class="ali"><p>Renaud Zéclerc</p><span></span></div>
+        </div>
+        <div class="image col-lg-2 col-md-6">
+            <a href="index.html">
+            <img src="../php/small-L97828940653031.jpg" alt=""></a>
+            <h3>La ville céleste</h3>
+            <div class="ali"><p>Renaud Zéclerc</p><span></span></div>
+        </div>
+        <div class="image col-lg-2 col-md-6">
+            <a href="index.html">
+            <img src="../php/small-L97828940653101.jpg" alt=""></a>
+            <h3>La ville céleste</h3>
+            <div class="ali"><p>Renaud Zéclerc</p><span></span></div>
+        </div>
+        <div class="image col-lg-2 col-md-6">
+            <a href="index.html">
+            <img src="../php/small-L97828983716151.jpg" alt=""></a>
+            <h3>La ville céleste</h3>
+            <div class="ali"><p>Renaud Zéclerc</p><span></span></div>
+        </div>
+        <div class="image col-lg-2 col-md-6">
+            <a href="index.html">
+            <img src="../php/small-L97828983716461.jpg" alt=""></a>
+            <h3>La ville céleste</h3>
+            <div class="ali"><p>Renaud Zéclerc</p><span></span></div>
+        </div>
+        <div class="image col-lg-2 col-md-6">
+            <a href="index.html">
+            <img src="../php/small-L9788940652871.jpg" alt=""></a>
+            <h3>La ville céleste</h3>
+            <div class="ali"><p>Renaud Zéclerc</p><span></span></div>
+        </div>
+    </div>
+    
+
+
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

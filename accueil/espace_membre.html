@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    .member{
+        position: relative;
+        height: 300px;
+        width: 250px;
+        border: #000 1px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+    }
+    .div-container {
+        position: absolute;
+      display: none;
+      height: 100%;
+      width: 100%;
+      background-color: #f2f2f2;
+      border: 1px solid #000;
+    }
+    .messages .ess{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+       padding-left: 20px;
+        gap: 32px;
+        border-bottom: #000 solid 1px;
+    }
+    button{
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="member">
+        <h3>Bonjour Mr Enrick</h3>
+        <div class="div-container messages" id="div1">
+            <div class="ess">
+                <button onclick="toggleDiv('div1')" class="bx bx-x"></button><h4>Messages</h4>
+                </div>
+                <div class="message_area">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus nihil cupiditate impedit, iure aspernatur nemo. Facere fugit repellat eaque ad. Vitae molestiae hic modi quibusdam laborum dolor, illum odio reiciendis.</p>
+                </div>
+                <form action="" method="post">
+                    <input type="text">
+                </form>
+          </div>
+        
+          <div class="div-container" id="div2">
+            <div class="ess">
+                <button onclick="toggleDiv('div2')" class="bx bx-x"></button><h3>Messages</h3>
+                </div>
+          </div>
+        
+          <div class="div-container" id="div3">
+            <div class="ess">
+                <button onclick="toggleDiv('div3')" class="bx bx-x"></button><h3>Messages</h3>
+                </div>
+          </div>
+          <button onclick="toggleDiv('div1')" class="bx bxs-message-rounded" >Messages</button>
+      <button onclick="toggleDiv('div2')" class="bx bxs-bell">Notifications</button>
+      <button onclick="toggleDiv('div3')" class="bx bxs-group">Espace Client</button>
+
+
+    </div>
+      
+      
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+<script>
+
+function toggleDiv(divId) {
+      let div = document.getElementById(divId);
+      if (div.style.display === "none") {
+        div.style.display = "block";
+      } else {
+        div.style.display = "none";
+      }
+    }
+</script>
+
+</html>

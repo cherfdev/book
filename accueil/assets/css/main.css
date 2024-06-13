@@ -1,0 +1,337 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.header-sticky{
+    position: sticky;
+    top: 3px;
+    transition: all .3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+  }
+.row{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   }
+   .disp{
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+   }
+    .containe{
+        position: relative;
+        padding: 10px;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background: #ccc;
+        padding-bottom: 25px;
+        z-index: 1;
+    }
+    .containe .image{
+        position: relative;
+        padding: 15px;
+        text-align: center;
+        
+    }
+    .containe .image img{
+        transition: all .3s ease-in-out;
+        width: 95%;
+        height: 75%;
+        border-radius: 5px;
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .containe .image h3{
+        margin-top: 10px;
+        transition: all .3s ease-in-out;
+    }
+    .ali{
+        display: flex;
+        flex-direction: column;
+    }
+    .ali span{
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        top:47%;
+        align-self: center;
+        transform: translateY(-40%);
+        border-radius: 5px;
+        height: 90%;
+        width: 90%;
+        z-index: -1;
+        background: hsl(0, 0%, 85%);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .containe .image img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+.text{
+    text-align: center;
+}
+.class{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.class > a{
+    margin: 10px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: #A0522D;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+.class a{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+.class a:hover{
+    background: #2E8B57;
+    color: #003;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.next{
+    border: 1px solid hsl(0, 0%, 98%);
+    background: linear-gradient(#4b79a1,#283e51);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.next h1{
+    text-align: center;
+}
+.news{
+    position: relative;
+    height: 80%;
+    background: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.all{
+    width: 80%;
+    overflow-y: auto;
+    margin-bottom: 5px;
+}
+.all::-webkit-scrollbar{
+    width: 0;
+}
+.news p{
+    max-width: 95%;
+}
+.news img{
+    height: 100%;
+    width: 20%;
+}
+.news a{
+    position: absolute;
+    bottom: 2px;
+    font-size: 20px;
+    width: 22px;
+    align-self: center;
+    justify-self: center;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+
+}
+.news a:hover{
+   transform: scale(1.5);
+}
+
+
+/* DISPOSITION DES LIVRES  */
+
+.bookdom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.book-items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.book-items > h2{
+    text-align: center;
+}
+.book-items .status-doc{
+    margin: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.book-items .status-doc h6{
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background: #ee626b;
+}
+.book-items .status-doc h4{
+    color: #f35525;
+}
+.book-items p{
+    width: 80%;
+    height: 120px;
+    overflow-y: scroll;
+}
+.book-items p::-webkit-scrollbar{
+    width: 0;
+}
+.book-items img{
+    border-radius: 5px;
+    height: 300px;
+    width: 200px;
+    justify-self: center;
+    transition: all .3s ease-in-out;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.book-items img:hover{
+    transform: scale(1.1);
+}
+
+/* FIN DE LA DISPOSITION */
+
+
+
+/* BOUTON DE RECHERCHE */
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+.search input{
+    border: none;
+    background: #fff;
+    color: hsl(0, 0, 10%);
+    border-radius: 15px;
+    outline: none;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.search i{
+    font-size: 22px;
+    padding: 5px;
+    color: hsl(0, 0%, 17%);
+    cursor: pointer;
+}
+
+
+/* FIN DU BOUTON DE RECHERCHE */
+
+
+/* DETAILS */
+.article{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+.article img{
+    border: 1px solid #ccc;
+    height: 400px;
+    width: 25%;
+}
+.article .component{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.article .component i{
+    display: flex;
+    gap: 8px;
+    color: #0d1117;
+}
+.article .component .element-low{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.article .component .element-low h6{
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+    background: #ee626b;
+}
+.article .component .element-low h4{
+    color: #f35525;
+}
+.auth{
+    display: flex;
+    gap: 10px;
+}
+
+/* FIN DE DETAILS */
+
+
+
+/* RESPONSIVE */
+
+
+
+@media (max-width: 767px) {
+    .news{
+        flex-direction: column;
+    }
+    .all{
+        height: 45%;
+        overflow-y: auto;
+        
+    }
+    .all::-webkit-scrollbar{
+        width: 0;
+    }
+    .news .all p{
+        width: 100%;
+    }
+    .news img{
+        height: 50%;
+        width: 50%;
+        margin-bottom: 5px;
+    }
+    .book-items :is(.status-doc,p){
+        width: 60%;
+    }
+    .article{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .article img{
+        width: 45%;
+    }
+    .article .component{
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .containe .image img{
+        width: 250px;
+        height: 350px;
+    }
+}
+.active_user img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+  }

@@ -1,0 +1,10 @@
+
+.errorText{
+   display: none;
+    padding: 10px;
+    margin: 20px;
+    background: hsl(356, 6%, 66%);
+    color: #0d1117;
+    text-align: center;
+    border-radius: 7px;
+  }

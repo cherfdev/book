@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My admin</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    
+        <header>
+            <nav>
+                <img src="admin.jpeg" alt="">
+                <a href="">
+                    <span class='bx bxs-arrow-from-left'></span>
+                </a>
+            </nav>
+        </header>
+        <div class="home">
+            <i class='bx bx-list-ul'></i>
+        </div>
+        <div class="affichage">
+            <div class="composant">
+                <h2>Mr colins</h2>
+                <div class="component"><i class='bx bx-home'></i><li onclick="pageload('tableau_de_bord.html')">Tableau de bord</li></div>
+                <div class="component"><i class='bx bxs-group'></i><li onclick="pageload('utilisateur.html')">Utilisateurs</li></div>
+                <div class="component"><i class='bx bxs-book'></i><li onclick="pageload('livre.html')">Livres</li></div>
+                <div class="component"><i class='bx bxs-category'></i><li onclick="pageload('category.html')">Catégories</li></div>
+                <div class="component"><i class='bx bxs-objects-horizontal-left'></i><li onclick="pageload('')">Emprunts</li></div>
+                <div class="component"><i class='bx bxs-comment-add'></i><li onclick="pageload('')">Nouveaux articles</li></div>
+            </div>
+            <iframe src="" frameborder="0" name="iframe" id="iframe"></iframe>
+        </div>
+        
+            
+    </div>
+</body>
+<script>
+    function pageload(url){
+        document.getElementById('iframe').src = url;
+    }
+</script>
+</html>

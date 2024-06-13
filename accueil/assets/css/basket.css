@@ -1,0 +1,155 @@
+
+  /* .plus pour le bibliothécaire et .basket pour le panier */
+  .basket{
+    position: fixed;
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 10px;
+    background: #FFE4B5;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+    z-index: 2;
+}
+
+/* PANIER */
+.basket{
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 15px;
+    background: #fff;
+    color: 	yellowgreen;
+    font-size: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+  /* Panier et procéder de payement */
+  .basket_field{
+    padding: 18px;
+    position: fixed;
+    border-radius: 10px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 500px;
+    width: 400px;
+    transition: all .3s ease-in-out;
+    background: hsl(0, 0%, 27%);
+    color: #ccc;
+    top: 100px;
+    bottom: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    z-index: 2;
+  }
+  .basket_field i{
+    color: hsl(0, 0%, 27%);
+  }
+  .basket_field .payement{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+  button{
+    cursor: pointer;
+  }
+  .basket_field .payement .payer{
+    border: none;
+    padding: 10px;
+    background: #D2691E;
+    border-radius: 8px;
+    color: #fff;
+  }
+  .basket_field .payement .ok_button{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: #D2B48C;
+  }
+  .basket_field .basket_content{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background: #ccc;
+
+  }
+  .basket_field .basket_content::-webkit-scrollbar{
+    width: 0;
+  }
+  .basket_field .basket_content .basket_element{
+    border-radius: 8px;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 3px;
+    background:	#FFE4B5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  .basket_field .basket_content .basket_element img{
+    width: 60px;
+    height: 60px;
+  }
+  .basket_field .basket_content .basket_element p{
+    width: 80px;
+    overflow: hidden;
+  }
+  .show{
+    display: flex;
+  }
+
+
+  /* Fin du panier */
+
+
+  /* Header carousel */
+
+  
+  .body {
+    position: relative;
+    height: 100%;
+  }
+
+  .body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
